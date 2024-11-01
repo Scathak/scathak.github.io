@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.text-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Parts of Speech Colors - Brighter and Spaced Out */
+.noun { color: #FF5733; } /* Bright Orange */
+.verb { color: #28A745; } /* Bright Green */
+.adjective { color: #007BFF; } /* Bright Blue */
+.adverb { color: #FFC107; } /* Bright Yellow */
+.number { color: #E83E8C; } /* Bright Pink */
+.time { color: #17A2B8; } /* Bright Teal */
+.place { color: #FF8C00; } /* Bright Dark Orange */
+
+/* Suffix Colors - Unique and Bright */
+.possessive-suffix { color: #FF6F61; } /* Bright Coral */
+.state-suffix { color: #FFD700; } /* Bright Gold */
+.locative-suffix { color: #00FA9A; } /* Bright Green */
+.tense-suffix { color: #FF4500; } /* Bright Red-Orange */
+.dative-suffix { color: #40E0D0; } /* Turquoise */
+.plural-suffix { color: #FF00FF; } /* Bright Magenta */
+.infinitive-suffix { color: #1E90FF; } /* Bright Dodger Blue */
+
+/* Tooltip Styling */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.tooltip::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}
