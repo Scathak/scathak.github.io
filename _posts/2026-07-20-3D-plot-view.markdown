@@ -1,0 +1,21 @@
+---
+layout: post
+title: "3D plot on synthetic data"
+date: 2026-07-20
+categories: [forecast, 3d view, python]
+---
+
+<!-- Main Content of the Post -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D plot on synthetic data</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+
+test12
+</body>
+</html>
